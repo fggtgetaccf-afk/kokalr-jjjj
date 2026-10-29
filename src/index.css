@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-fallback: "Padauk", "Pyidaungsu", "Myanmar3", system-ui, -apple-system, sans-serif;
+  }
+  body {
+    font-family: "Plus Jakarta Sans", var(--font-fallback);
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    overscroll-behavior-y: contain;
+  }
+  input, textarea {
+    user-select: text;
+  }
+}
+
+/* Custom 3D Card Glass & Shadow Styling */
+.card-3d {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.15), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+}
+
+.card-3d-glow {
+  background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
+  border: 1px solid rgba(186, 230, 253, 0.8);
+  box-shadow: 0 14px 28px -6px rgba(14, 165, 233, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Custom scrollbar for horizontal chip bars */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+

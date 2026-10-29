@@ -1,0 +1,6 @@
+{
+  "name": "MYANMAR RECAP AI",
+  "description": "Mobile-friendly AI movie recap video generator for Myanmar creators with Burmese script, voiceover, subtitles, and smart blur.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
